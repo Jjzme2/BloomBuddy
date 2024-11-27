@@ -43,26 +43,10 @@ app.use(passport.initialize());
 // Add Global Middleware for EJS templates
 app.use(globalMiddleware);
 
-// * Route Start
+// Add routes to the application
+import mainRoutes from "./routes/main.js";
+app.use("/", mainRoutes);
 
-// Basic route to test the server
-app.get("/", (req, res) => {
-  const name = req.query.name || "Guest";
-  res.render("home", { title: "Home Page", name });
-});
-
-// Example route to render an EJS template
-app.get("/greet", (req, res) => {
-  const name = req.query.name || "Guest";
-  res.render("greet", { title: "Greeting", name });
-});
-
-// Handle 404 Errors (Optional)
-app.use((req, res) => {
-  res.status(404).render("404", { title: "Page Not Found" });
-});
-
-// * Route End
 // Start the server and listen on the defined port
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

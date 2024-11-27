@@ -4,4 +4,6 @@ const websiteResources = [
 		"url": "https://copilot-workspace.githubnext.com/Jjzme2",
 		"description": "Github Workspaces for Copilot"
 	}
-]
+];
+
+export default websiteResources;
