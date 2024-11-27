@@ -1,0 +1,32 @@
+{
+  "name": "bloom_buddy_server",
+  "version": "0.0.1",
+  "description": "**UPDATE LATER**",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev:server": "npm run lint && npm run format && nodemon server.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ILYTAT",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "ejs-lint": "^2.0.1",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.7",
+    "passport": "^0.7.0",
+    "prettier": "^3.4.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0"
+  }
+}
